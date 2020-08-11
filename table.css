@@ -1,0 +1,95 @@
+/*
+   File: table.css
+   91.461 Assignment: Using the jQuery UI Slider and Tab Widgets
+   Corina Mangione, UMass Lowell Computer Science, corina_mangione@student.uml.edu
+   Copyright (c) 2020 by Corina Mangione. All rights reserved. May be
+   freely
+   copied or excerpted for educational purposes with credit to the
+   author.
+   updated by Corina Mangione on August 10, 2020
+   This document provides styling for the table ans user input
+   */
+
+
+/* Formats table */
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	font-family: Arial, sans-serif;
+}
+
+.largeTable {
+	font-size: 0.6em;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	text-align: center;
+	color: #000;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+	background-color: #D3D3D3;
+}
+
+table tr:nth-child(1) td:first-child {
+	background-color: white;
+}
+
+td:nth-child(1) {
+	background-color: aquamarine;
+}
+
+tr:nth-child(1) {
+	background-color: aquamarine;
+}
+
+body {
+	background-color: DarkTurquoise;
+}
+
+h1 {
+	color: dodgerBlue;
+	text-align: center;
+}
+
+
+/* changes error message color to red */
+
+#errorString {
+	color: red
+}
+
+
+/* formats the content in the center of the page */
+/* https://stackoverflow.com/questions/114543/how-to-horizontally-center-a-div */
+
+#inner {
+	width: 80%;
+	 margin: 0 auto;
+}
+
+
+/* adds padding between form elements */
+/* https://stackoverflow.com/questions/16379187/spacing-between-form-fields */
+
+input {
+	margin-bottom: 10px;
+}
+
+.ui-slider {
+	background-color: #999;
+	background-image: none;
+	margin-bottom: 0.5em;
+}
+
+#tabs[aria-hidden="true"] {
+	display: none;
+}

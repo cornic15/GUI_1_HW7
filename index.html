@@ -1,0 +1,63 @@
+<!--   File: index.html
+   91.461 Assignment: Using the jQuery UI Slider and Tab Widgets
+   Corina Mangione, UMass Lowell Computer Science, corina_mangione@student.uml.edu
+   Copyright (c) 2020 by Corina Mangione. All rights reserved. May be
+   freely
+   copied or excerpted for educational purposes with credit to the
+   author.
+   updated by Corina Mangione on August 10, 2020
+   -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Multiplication Table</title>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+      <link rel="stylesheet" type="text/css" href="table.css" media="screen">
+   </head>
+   <body>
+      <!-- https://www.w3schools.com/html/html_forms.asp -->
+      <!-- Display directions -->
+      <div id="inner">
+         <h1> Multiplication Table </h1>
+         <p> Please enter a number between -50 and 50 and a Multiplication table will be created. The horizontal
+            first number and the vertical first number need to be smaller than the horizontal last number
+            and vertical last number respectively.
+         </p>
+         <!-- Creates user input form -->
+         <form id = "multiplication">
+            <label for="horz_first">Horizontal First Number:</label><br>
+            <div id="horz_first_s"></div>
+            <input type="number" value="0" required id="horz_first" name="horz_first"><br>
+            <label for="horz_last">Horizontal Last Number:</label><br>
+            <div id="horz_last_s"></div>
+            <input type="number" value="0" required id="horz_last" name="horz_last"><br>
+            <label for="vert_first">Vertical First Number:</label><br>
+            <div id="vert_first_s"></div>
+            <input type="number" value="0" required id="vert_first" name="vert_first"><br>
+            <label for="vert_last">Vertical Last Number:</label><br>
+            <div id="vert_last_s"></div>
+            <input type="number" value="0" required id="vert_last" name="vert_last"><br>
+         </form>
+         <p id="errorString" class = 'error-range horz-order'></p>
+         <div style="overflow-x:visible;" id="div1">
+         </div>
+         <div id='tabs'>
+            <ul>
+            </ul>
+         </div>
+         <button id='add-tab'>Add table to tab</button>
+         <button id='delete-checked' onclick="delete_checked();">Delete checked tabs</button>
+         <button id='delete' onclick="delete_tabs();">Delete all tabs</button>
+      </div>
+      <!--  <div style="overflow-x:auto;">
+         <table id="div1"></table>
+         </div>-->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+      <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+      <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+      <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      <!--<script type='text/javascript' src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"></script>-->
+      <script src = "table.js"></script>
+   </body>
+</html>
